@@ -8,8 +8,8 @@
 
 ## 演示
 
-<link type="text/css" rel="stylesheet" media="screen" href="/src/step.css">
-<link type="text/css" rel="stylesheet" media="screen" href="/src/mini.css">
+<link type="text/css" rel="stylesheet" media="screen" href="src/step.css">
+<link type="text/css" rel="stylesheet" media="screen" href="src/mini.css">
 
 ### 标准步骤条
 
