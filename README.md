@@ -2,11 +2,196 @@
 
 ---
 
-// description
+通用步骤条，有标准和迷你两套样式。
 
 ---
 
-## 使用说明
+## 演示
 
+<link type="text/css" rel="stylesheet" media="screen" href="../src/step.css">
+<link type="text/css" rel="stylesheet" media="screen" href="../src/mini.css">
 
-## API
+### 标准步骤条
+
+````html
+<ol class="ui-step ui-step-3">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-icon">        
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">3</i>
+            <span class="ui-step-text">第三步第三步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+</ol>
+````
+
+````html
+<ol class="ui-step ui-step-4">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-icon">        
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-done">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">3</i>
+            <span class="ui-step-text">第三步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">4</i>
+            <span class="ui-step-text">第四步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+</ol>
+````
+
+````html
+<ol class="ui-step ui-step-5">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-icon">        
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-done">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+        <li class="ui-step-done">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">3</i>
+            <span class="ui-step-text">第三步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">4</i>
+            <span class="ui-step-text">第四步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">5</i>
+            <span class="ui-step-text">第五步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+</ol>
+````
+
+````html
+<ol class="ui-step ui-step-2">
+    <li class="ui-step-start ui-step-active">
+        <div class="ui-step-icon">        
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+</ol>
+````
+
+````html
+<ol class="ui-step ui-step-blue ui-step-3">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-icon">        
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">✔</i>
+            <span class="ui-step-text">第三步第三步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+</ol>
+````
+
+### 迷你步骤条
+
+````html
+<ol class="ui-ministep">
+    <li class="ui-ministep-item">
+        <i class="iconfont">&#x0079;</i>
+        <i class="ui-ministep-number">1</i>        
+        <span class="ui-ministep-text">第一步</span>
+    </li>
+    <li class="ui-ministep-item ui-ministep-active">
+        <i class="iconfont">&#x0079;</i>
+        <i class="ui-ministep-number">2</i>
+        <span class="ui-ministep-text">第二步</span>
+    </li>
+    <li class="ui-ministep-item">
+        <i class="iconfont">&#x0079;</i>
+        <i class="ui-ministep-number">3</i>
+        <span class="ui-ministep-text">第三步</span>
+    </li>
+</ol>
+````
