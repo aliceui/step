@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <title>Step - step</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="nico 0.2.2" />
+    <link type="image/x-icon" href="./static/css/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="./static/css/normalize.css" />
+    <link rel="stylesheet" href="./static/css/site.css" />
+    <link rel="stylesheet" href="./static/css/solarized.css" />
+    <script src="http://static.alipayobjects.com/seajs/1.2.1/sea.js"></script>
+    <script src="./static/js/arale-helper.js"></script>
+    <script src="./static/js/site.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36247332-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>
+  (function() {
+    var data;
+    seajs._package = data = {"name":"step","version":"1.0.0","root":"alice","description":"通用步骤条。","homepage":"http://aliceui.org/step","author":"","repository":{"type":"git","url":"https://github.com/aliceui/step"},"bugs":{"url":"https://github.com/aliceui/step/issues"},"license":"MIT","dependencies":{},"tests":["step"],"output":{"step.css":["step.css","mini.css"]}}
+    data.dependencies && (delete data.dependencies['$'])
+    data.devDependencies && (delete data.devDependencies['$'])
+
+    seajs.config({ alias: data.dependencies })
+    seajs.config({ alias: data.devDependencies })
+    seajs.config({ alias: {} })
+  })();
+</script>
+    <!--[if lt IE 9]>
+    <script src="./static/js/html5shiv.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div id="body-wrapper">
+      <aside id="sidebar-wrapper">
+        <h1><a href="./">Step</a><sup class="package-root"><a href="/">alice</a></sup></h1>
+        <p class="version">当前版本：<a href="http://aralejs.org/docs/online-status.html#alice-step" title="点击查看此组件发布情况">1.0.0</a></p>
+        <p class="description">通用步骤条。</p>
+        <a class="source" href="https://github.com/aliceui/step" target="_blank">View the Project</a>
+      </aside>
+      <div id="content-wrapper">
+        <div id="content">
+<article class="hentry">
+  <h1 class="entry-title">step</h1>
+  <div class="entry-content">
+    <p>通用步骤条，有标准和迷你两套样式。</p>
+
+<hr/>
+<h2 id="%E6%BC%94%E7%A4%BA">演示</h2>
+<p><link type="text/css" rel="stylesheet" media="screen" href="../src/step.css">
+<link type="text/css" rel="stylesheet" media="screen" href="../src/mini.css"></p>
+<h3 id="%E6%A0%87%E5%87%86%E6%AD%A5%E9%AA%A4%E6%9D%A1">标准步骤条</h3>
+<div class="nico-insert-code"><ol class="ui-step ui-step-3">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-icon">        
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">3</i>
+            <span class="ui-step-text">第三步第三步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+</ol>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ol</span> <span class="attribute">class</span>=<span class="value">"ui-step ui-step-3"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-start ui-step-done"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>        
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第一步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-active"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第二步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-end"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第三步第三步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ol</span>&gt;</span>
+</code></pre></div>
+<div class="nico-insert-code"><ol class="ui-step ui-step-4">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-icon">        
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-done">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">3</i>
+            <span class="ui-step-text">第三步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">4</i>
+            <span class="ui-step-text">第四步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+</ol>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ol</span> <span class="attribute">class</span>=<span class="value">"ui-step ui-step-4"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-start ui-step-done"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>        
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第一步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-done"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第二步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-active"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第三步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-end"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>4<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第四步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ol</span>&gt;</span>
+</code></pre></div>
+<div class="nico-insert-code"><ol class="ui-step ui-step-5">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-icon">        
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-done">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+        <li class="ui-step-done">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">3</i>
+            <span class="ui-step-text">第三步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">4</i>
+            <span class="ui-step-text">第四步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">5</i>
+            <span class="ui-step-text">第五步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+</ol>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ol</span> <span class="attribute">class</span>=<span class="value">"ui-step ui-step-5"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-start ui-step-done"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>        
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第一步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-done"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第二步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-done"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第三步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-active"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>4<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第四步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-end"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>5<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第五步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ol</span>&gt;</span>
+</code></pre></div>
+<div class="nico-insert-code"><ol class="ui-step ui-step-2">
+    <li class="ui-step-start ui-step-active">
+        <div class="ui-step-icon">        
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+</ol>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ol</span> <span class="attribute">class</span>=<span class="value">"ui-step ui-step-2"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-start ui-step-active"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>        
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第一步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-end"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第二步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ol</span>&gt;</span>
+</code></pre></div>
+<div class="nico-insert-code"><ol class="ui-step ui-step-blue ui-step-3">
+    <li class="ui-step-start ui-step-done">
+        <div class="ui-step-icon">        
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">1</i>
+            <span class="ui-step-text">第一步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-active">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">2</i>
+            <span class="ui-step-text">第二步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+    <li class="ui-step-end">
+        <div class="ui-step-icon">
+            <i class="iconfont">&#x0079;</i>
+            <i class="ui-step-number">✔</i>
+            <span class="ui-step-text">第三步第三步</span>
+        </div>
+        <div class="ui-step-line">-</div>
+    </li>
+</ol>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ol</span> <span class="attribute">class</span>=<span class="value">"ui-step ui-step-blue ui-step-3"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-start ui-step-done"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>        
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第一步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-active"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第二步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-step-end"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-icon"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-step-number"</span>&gt;</span>✔<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-step-text"</span>&gt;</span>第三步第三步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-step-line"</span>&gt;</span>-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ol</span>&gt;</span>
+</code></pre></div><h3 id="%E8%BF%B7%E4%BD%A0%E6%AD%A5%E9%AA%A4%E6%9D%A1">迷你步骤条</h3>
+<div class="nico-insert-code"><ol class="ui-ministep">
+    <li class="ui-ministep-item">
+        <i class="iconfont">&#x0079;</i>
+        <i class="ui-ministep-number">1</i>        
+        <span class="ui-ministep-text">第一步</span>
+    </li>
+    <li class="ui-ministep-item ui-ministep-active">
+        <i class="iconfont">&#x0079;</i>
+        <i class="ui-ministep-number">2</i>
+        <span class="ui-ministep-text">第二步</span>
+    </li>
+    <li class="ui-ministep-item">
+        <i class="iconfont">&#x0079;</i>
+        <i class="ui-ministep-number">3</i>
+        <span class="ui-ministep-text">第三步</span>
+    </li>
+</ol>
+</div>
+<div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ol</span> <span class="attribute">class</span>=<span class="value">"ui-ministep"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-ministep-item"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-ministep-number"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">i</span>&gt;</span>        
+        <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-ministep-text"</span>&gt;</span>第一步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-ministep-item ui-ministep-active"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-ministep-number"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-ministep-text"</span>&gt;</span>第二步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-ministep-item"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"iconfont"</span>&gt;</span>&amp;#x0079;<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-ministep-number"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-ministep-text"</span>&gt;</span>第三步<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ol</span>&gt;</span>
+</code></pre></div>
+  </div>
+</article>
+</div>
+      </div>
+      
+    </div>
+    <div id="footer-wrapper">
+      <footer>
+        <p class="powered">
+        <a href="http://aralejs.org">Arale</a> •
+        <a href="http://aliceui.org">Alice</a> •
+        <a href="https://github.com/spmjs/spm">spm</a> •
+        <a href="http://lab.lepture.com/nico/">nico</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

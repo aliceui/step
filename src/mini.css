@@ -1,0 +1,40 @@
+.ui-ministep {
+    list-style: none;
+    font-size: 14px;
+    font-family: tahoma;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: #b7b7b7;    
+}
+
+.ui-ministep-item {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: 36px;
+}
+
+.ui-ministep .iconfont {
+    color: #b7b7b7;    
+    font-size: 18px;
+}
+
+.ui-ministep .ui-ministep-number {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    color: #fff;
+    font-style: normal;
+}
+
+.ui-ministep .ui-ministep-text {
+    position: relative;
+    top: -2px;
+}
+
+.ui-ministep-active,
+.ui-ministep-active .iconfont {
+    color: #FF6700;    
+}
