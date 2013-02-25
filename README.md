@@ -11,6 +11,12 @@
 <link type="text/css" rel="stylesheet" media="screen" href="src/step.css">
 <link type="text/css" rel="stylesheet" media="screen" href="src/mini.css">
 
+<style>
+.ui-step, .ui-ministep {
+    margin: 30px 0;
+}
+</style>
+
 ### 标准步骤条
 
 ````html
