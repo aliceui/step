@@ -2,7 +2,7 @@
 
 ---
 
-通用步骤条，有标准和迷你两套样式。
+通用步骤条，有标准和迷你两套样式。支持二到五步。
 
 ---
 
@@ -48,6 +48,8 @@
 </ol>
 ````
 
+### 四步
+
 ````html
 <ol class="ui-step ui-step-4">
     <li class="ui-step-start ui-step-done">
@@ -84,6 +86,8 @@
     </li>
 </ol>
 ````
+
+### 五步
 
 ````html
 <ol class="ui-step ui-step-5">
@@ -130,6 +134,8 @@
 </ol>
 ````
 
+### 二步
+
 ````html
 <ol class="ui-step ui-step-2">
     <li class="ui-step-start ui-step-active">
@@ -150,6 +156,8 @@
     </li>
 </ol>
 ````
+
+### 蓝色步骤条
 
 ````html
 <ol class="ui-step ui-step-blue ui-step-3">
