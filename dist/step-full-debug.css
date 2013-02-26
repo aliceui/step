@@ -65,6 +65,17 @@
     color: #fff;
 }
 
+.ui-step-end .ui-step-number {
+    background: transparent;
+    font-size: 12px;
+    font-style: normal;
+    left: 17px;
+    line-height: 12px;
+    padding: 0;
+    text-shadow: none;
+    top: 9px;
+}
+
 .ui-step-icon .ui-step-text {
     height: 20px;
     line-height: 20px;
