@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "root": "alice",
     "description": "通用步骤条。",
+    "keywords": [
+        "步骤"
+    ],
     "homepage": "http://aliceui.org/step",
     "author": "",
     "repository": {
