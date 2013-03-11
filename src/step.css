@@ -1,5 +1,7 @@
 /* alice.step 样式模块 */
 
+/* bug: http://www.aiubug.com/?p=523 */
+
 @charset "utf-8";
 
 .ui-step {
@@ -42,8 +44,8 @@
 .ui-step-icon .iconfont {
     font-size: 30px;
     margin: 0;
-    color: #b7b7b7;
     color: rgba(0, 0, 0, 0.25);
+    *color: #b7b7b7;    
     line-height: 30px;
     background: #fff;
     padding: 0 10px;
@@ -98,6 +100,7 @@
     top: 0;
     right: -125px;
     width: 150px;
+    zoom: 1;
 }
 
 .ui-step li.ui-step-end .ui-step-line {
