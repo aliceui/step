@@ -1,6 +1,6 @@
 .ui-ministep {
     list-style: none;
-    font-size: 14px;
+    font-size: 12px;
     font-family: tahoma;
     line-height: 1.5;
     margin: 0;
@@ -23,9 +23,10 @@
 
 .ui-ministep .ui-ministep-number {
     position: absolute;
-    top: 2px;
+    top: 6px;
     left: 5px;
     color: #fff;
+    line-height: 12px;
     font-style: normal;
 }
 
