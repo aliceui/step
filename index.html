@@ -34,12 +34,14 @@
     seajs.config({ alias: {} })
 
     // for alice
+    var array = [];
     for(var dep in data.dependencies) {
         // 如果依赖的是样式模块
         if (data.dependencies[dep].indexOf('.css') > 0) {
-            seajs.use(dep);
+            array.push(dep);
         }
     }
+    seajs.use(array);
 
   })();
 </script>

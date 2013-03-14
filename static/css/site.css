@@ -285,6 +285,7 @@ pre, code, tt {
     background-color: transparent;
     padding-top: 1px;
     position: relative;
+    zoom: 1;
 }
 .hentry .collapse pre {
     overflow: hidden;
