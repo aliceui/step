@@ -41,7 +41,7 @@
         <div class="ui-step-line">-</div>    
         <div class="ui-step-icon">
             <i class="iconfont">&#x0079;</i>
-            <i class="iconfont ui-step-number">&#x0072;</i>
+            <i class="iconfont ui-step-number">&#xF029;</i>
             <span class="ui-step-text">第三步第三步</span>
         </div>
     </li>
@@ -80,7 +80,7 @@
         <div class="ui-step-line">-</div>    
         <div class="ui-step-icon">
             <i class="iconfont">&#x0079;</i>
-            <i class="iconfont ui-step-number">&#x0072;</i>
+            <i class="iconfont ui-step-number">&#xF029;</i>
             <span class="ui-step-text">第四步</span>
         </div>
     </li>
@@ -127,7 +127,7 @@
         <div class="ui-step-line">-</div>    
         <div class="ui-step-icon">
             <i class="iconfont">&#x0079;</i>
-            <i class="iconfont ui-step-number">&#x0072;</i>
+            <i class="iconfont ui-step-number">&#xF029;</i>
             <span class="ui-step-text">第五步</span>
         </div>
     </li>
@@ -150,7 +150,7 @@
         <div class="ui-step-line">-</div>    
         <div class="ui-step-icon">
             <i class="iconfont">&#x0079;</i>
-            <i class="iconfont ui-step-number">&#x0072;</i>
+            <i class="iconfont ui-step-number">&#xF029;</i>
             <span class="ui-step-text">第二步</span>
         </div>
     </li>
@@ -181,7 +181,7 @@
         <div class="ui-step-line">-</div>    
         <div class="ui-step-icon">
             <i class="iconfont">&#x0079;</i>
-            <i class="iconfont ui-step-number">&#x0072;</i>
+            <i class="iconfont ui-step-number">&#xF029;</i>
             <span class="ui-step-text">第三步第三步</span>
         </div>
     </li>
