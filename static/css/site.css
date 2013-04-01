@@ -1,18 +1,18 @@
 @font-face {
-    font-family: "Marcellus";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Marcellus"), local("Marcellus-Regular"), url("marcellus.woff") format("woff");
+  font-family: 'Actor';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Actor Regular'), local('Actor-Regular'), url(Actor.woff) format('woff');
 }
 
 /* alipay iconfont */
 @font-face {  
     font-family: "rei";
-    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130123"); /* IE9 */
-    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130123#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("https://i.alipayobjects.com/common/fonts/rei.woff?20130123") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
-    url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130123")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
-    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130123#rei") format("svg"); /* iOS 4.1- */
+    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130401"); /* IE9 */
+    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130401#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://i.alipayobjects.com/common/fonts/rei.woff?20130401") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130401")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130401#rei") format("svg"); /* iOS 4.1- */
 }
 .iconfont {
     font-family:"rei";
@@ -27,7 +27,6 @@
 body {
     background-color: #F2F0E9;
     background-image: url(bg.gif);
-    text-rendering: optimizelegibility;
 }
 
 pre, code, tt {
@@ -67,7 +66,7 @@ pre, code, tt {
 }
 #sidebar-wrapper h1 {
     margin: 0;
-    font-family: "Marcellus", sans-serif;
+    font-family: "Actor", sans-serif;
 }
 #sidebar-wrapper .version {
     font-size: 12px;
@@ -165,7 +164,7 @@ pre, code, tt {
 }
 .hentry .entry-title {
     margin-bottom: 12px;
-    font-family: "Marcellus", sans-serif;
+    font-family: "Actor", sans-serif;
 }
 .hentry .meta {
     color: #BCBCBD;
@@ -186,7 +185,7 @@ pre, code, tt {
     margin-top: 40px;
     padding-bottom: 4px;
     border-bottom: 1px solid #ccc;
-    font-family: "Marcellus", sans-serif;
+    font-family: "Actor", sans-serif;
 }
 .hentry hr {
     display: block;
