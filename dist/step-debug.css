@@ -1,10 +1,7 @@
-
-/** alice/step/1.0.0/step.css **/
+/*! define alice/step/1.0.0/step-debug.css */
 /* alice.step 样式模块 */
 
 /* bug: http://www.aiubug.com/?p=523 */
-
-@charset "utf-8";
 
 .ui-step {
     padding: 0 25px;
@@ -159,6 +156,7 @@
     background: #418cd6;
 }
 
+/*! block alice/step/1.0.0/mini-debug.css */
 .ui-ministep {
     list-style: none;
     font-size: 12px;
@@ -200,3 +198,4 @@
 .ui-ministep-active .iconfont {
     color: #FF6700;    
 }
+/*! endblock alice/step/1.0.0/mini-debug.css */

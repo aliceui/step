@@ -1,7 +1,7 @@
 {
     "name": "step",
     "version": "1.0.0",
-    "root": "alice",
+    "family": "alice",
     "description": "通用步骤条。",
     "keywords": [
         "步骤"
@@ -16,10 +16,8 @@
         "url": "https://github.com/aliceui/step/issues"
     },
     "license": "MIT",
-    "dependencies": {
-    },
     "tests": ["step"],
-    "output": {
-        "step.css": ["step.css", "mini.css"]
+    "spm": {
+        "output": ["step.css"]
     }
 }

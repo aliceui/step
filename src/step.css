@@ -2,8 +2,6 @@
 
 /* bug: http://www.aiubug.com/?p=523 */
 
-@charset "utf-8";
-
 .ui-step {
     padding: 0 25px;
     margin: 0 auto;
@@ -156,3 +154,5 @@
 .ui-step-blue .ui-step-done .ui-step-line {
     background: #418cd6;
 }
+
+@import url('./mini.css');
