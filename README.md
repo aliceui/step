@@ -52,7 +52,7 @@
 
 ````html
 <ol class="ui-step ui-step-4">
-    <li class="ui-step-start ui-step-done">
+    <li class="ui-step-start ui-step-active">
         <div class="ui-step-line">-</div>    
         <div class="ui-step-icon">        
             <i class="iconfont">&#x0079;</i>
@@ -60,7 +60,7 @@
             <span class="ui-step-text">第一步</span>
         </div>
     </li>
-    <li class="ui-step-active">
+    <li class="">
         <div class="ui-step-line">-</div>    
         <div class="ui-step-icon">
             <i class="iconfont">&#x0079;</i>
@@ -68,7 +68,7 @@
             <span class="ui-step-text">第二步</span>
         </div>
     </li>
-    <li class="ui-step-active">
+    <li class="">
         <div class="ui-step-line">-</div>    
         <div class="ui-step-icon">
             <i class="iconfont">&#x0079;</i>
