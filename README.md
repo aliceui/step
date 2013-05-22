@@ -60,7 +60,7 @@
             <span class="ui-step-text">第一步</span>
         </div>
     </li>
-    <li class="ui-step-done">
+    <li class="ui-step-active">
         <div class="ui-step-line">-</div>    
         <div class="ui-step-icon">
             <i class="iconfont">&#x0079;</i>
