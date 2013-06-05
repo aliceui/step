@@ -3,13 +3,14 @@
 /* bug: http://www.aiubug.com/?p=523 */
 
 .ui-step {
-    padding: 0 25px;
+    padding: 0 40px;
     margin: 0 auto;
     font-size: 14px;
     list-style: none;
     zoom: 1;
     position: relative;
     color: #b7b7b7;
+    overflow: hidden;
 }
 
 .ui-step:after {
@@ -23,7 +24,7 @@
 
 .ui-step li {
     float: left;
-    height: 50px;
+    height: 54px;
     margin: 0;
     width: 50%;
     position: relative;
@@ -97,7 +98,7 @@
 .ui-step li.ui-step-end {
     position: absolute;
     top: 0;
-    right: -125px;
+    right: -110px;
     width: 150px;
     zoom: 1;
 }
