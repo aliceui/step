@@ -1,4 +1,4 @@
-/*! define alice/step/1.0.1/step-debug.css */
+/*! define alice/step/1.0.2/step-debug.css */
 /* alice.step 样式模块 */
 
 /* bug: http://www.aiubug.com/?p=523 */
@@ -102,6 +102,7 @@
     right: -110px;
     width: 150px;
     zoom: 1;
+    _clear: both;   /* 修复ie6下最后一步莫名其妙显示不出来的问题 */
 }
 
 .ui-step li.ui-step-end .ui-step-line {
@@ -157,7 +158,7 @@
     background: #418cd6;
 }
 
-/*! block alice/step/1.0.1/mini-debug.css */
+/*! block alice/step/1.0.2/mini-debug.css */
 .ui-ministep {
     list-style: none;
     font-size: 12px;
@@ -199,4 +200,4 @@
 .ui-ministep-active .iconfont {
     color: #FF6700;    
 }
-/*! endblock alice/step/1.0.1/mini-debug.css */
+/*! endblock alice/step/1.0.2/mini-debug.css */
