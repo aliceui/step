@@ -101,6 +101,7 @@
     right: -110px;
     width: 150px;
     zoom: 1;
+    _clear: both;   /* 修复ie6下最后一步莫名其妙显示不出来的问题 */
 }
 
 .ui-step li.ui-step-end .ui-step-line {

@@ -1,6 +1,6 @@
 {
     "name": "step",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "family": "alice",
     "description": "通用步骤条。",
     "keywords": [
