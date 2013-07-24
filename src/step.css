@@ -66,6 +66,10 @@
     color: #fff;
 }
 
+.ui-step .ui-step-active i.ui-step-number {
+    color:#FFF;
+}
+
 .ui-step-end .ui-step-number {
     background: transparent;
     font-size: 12px;
