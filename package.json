@@ -1,6 +1,6 @@
 {
     "name": "alice-step",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "通用步骤条。",
     "keywords": [
         "步骤"
@@ -17,6 +17,9 @@
     "license": "MIT",
     "tests": ["step"],
     "spm": {
+        "dependencies": {
+          "alice-iconfont": "1.1.0"
+        },
         "main": "index.css"
     }
 }
