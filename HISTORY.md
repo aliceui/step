@@ -2,6 +2,10 @@
 
 ---
 
+## 1.2.0
+
+`tag:improved` 按照 spm@3.6 的规范，@import 包的时候加 ~ 前缀
+
 ## 1.1.0
 
 `tag:improved` 按照 spm@3x 的规范升级
